@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+}
+
+/* Banner */
+#banner{
+    width: 100%;
+    height: 75px;
+    top: 0; 
+    background-color: lightgray;
+}
+
+#brand-container{
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+#logo{
+    height: 55px;
+    margin: 10px 0 0 25px;
+}
+
+#topp-meny{
+    width: 50%;
+    float: right;
+    height: 100%;
+}
+
+#topp-meny ul{
+    float: right;
+    list-style: none;
+}
+
+#topp-meny ul li{
+    float: left;
+    padding: 25px 50px 0 0;
+}
+
+.active{
+    color: #03A696;
+    font-weight: bold;
+    
+}
+
+.menu-listlink{
+    color:#025951;
+    text-decoration: none;
+    font-size: 22px;
+
+}
+#topp-meny ul li a:hover{
+    color:#03A696; 
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    height: 75px;
+    bottom: 0; 
+    background-color: lightgray;
+    position: relative;
+    color:#025951;
+    float: left;
+}
+
+.footer-logo{
+    width:33.33%;
+    float: left;
+}
+
+#logo-footer{
+    height: 55px;
+    margin: 10px 0 0 25px;
+}
+
+.footer-copyright{
+    width:33.33%;
+    float: left;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.footer-published{
+    width:33.33%;
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* Fullbredde containere */
+.fullbredde-container{
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    position: relative;
+}
+.fullbredde-bilde{
+    height: 500px;
+    overflow: hidden;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Overskift */
+.overskrift-1{
+    position: absolute;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    left: 50%;
+    font-size: 50px;
+}
+
+#forside-overskrift{
+    color: white;
+    top: 65%;
+    font-size: 50px;
+}
+
+/* innhold-container */
+.innhold-container{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    color: #025951;
+}
+.innhold-container h2{
+    font-size: 35px;
+    position: absolute;
+    left: 450px;
+    margin-right: 50px;
+}
+
+.innhold-container p{
+    font-size: 22px;
+    position: absolute;
+    left: 450px;
+    margin-top: 75px;
+    margin-right: 50px; 
+}    
+.innhold-container-bilder{
+    height: 200px;
+    width: 350px; 
+    overflow: hidden;
+    float: left;
+    margin-left: 50px;   
+}
+
+/* index.html*/
+ #nyheter{
+    margin-top: 100px;
+ }  
+
+ /* produkter.html */
+ #produkter-overskrift-container{
+     width: 100%;
+     height: 100px;
+     position: relative;
+     margin-bottom: 150px;
+     margin-top: 50px;
+ }
+
+ #produkter-overskrift{
+     font-size: 50px;
+     position: absolute;
+     color: #025951;
+     transform: translateX(-50%);
+     -webkit-transform: translateX(-50%);
+     -ms-transform: translateX(-50%);
+     left: 50%;
+ }
+ /* om-oss.html */
+ #om-oss-overskrift{
+    color: white;
+    top: 30%;
+    font-size: 70px;
+}
+
+ #om-kistefoss{
+     top: 50px;
+ }
+ #om-kistefoss >h2{
+     left: 50px;
+ }
+ #om-kistefoss >p{
+     left: 50px;
+ }
+
+#kistefos-historie >p{
+    left: 50px; 
+}
+
+#kistefos-historie >h2{
+    left: 50px;
+}
+
+#transport-og-overnatting{
+    height: 375px;
+}
+
+#transport-og-overnatting >h2{
+    left: 50px;
+}
+
+#transport-og-overnatting >p{
+    left: 50px;
+}
+
+#transport-og-overnatting >p:last-child{
+    margin-top: 200px;
+    left: 50px;
+}
+
+/* kontakt-oss.html */
+#kontakt-oss-banner{
+    height: 500px;
+    overflow: hidden;
+    width: 100%;
+    object-fit: cover; 
+}
+#kontakt-oss-overskrift-container{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    margin-bottom: 150px;
+    margin-top: 50px;
+}
+
+#kontakt-oss-overskrift-container >h1{
+    font-size: 50px;
+    position: absolute;
+    color: #025951;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    left: 50%;
+}
+
+#kontaktinformasjon >ul{
+    margin-top: 100px;
+}
+
+/* Tabell */
+table {
+    border-collapse: collapse;
+    width: 70%;
+    margin-left: 50px;
+    margin-bottom: 25px;
+    font-size: 22px;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+/* Åpningstider */
+  #aapningatider-tabell{
+    margin-top: -100px;
+  }
+  #aapningatider-tabell >caption{
+      font-weight: bold;
+  }
+  #aapningstider >h2{
+    left: 50px;
+  }
+  #aapningstider >p{
+    left: 50px;
+  }
+
+ /* priser */
+ #priser >h2{
+    left: 50px;
+}
+#priser >p{
+    left: 50px;
+}
+#pris-tabell{
+    margin-top: -100px;
+    margin-bottom: 150px;
+}
+
+/* kontaktinformasjon */
+#kontaktinformasjon{
+    margin-bottom: 50px;
+}
+
+#kontaktinformasjon >h2{
+    left: 50px;
+}
+
+#kontaktinformasjon >ul{
+    font-size: 22px;
+    position: absolute;
+    left: 50px;
+    list-style: none;
+}
+
+/* Linker */
+.link{
+color: #025951;
+text-decoration: none;
+font-weight: bold;
+}
+
+
+  
