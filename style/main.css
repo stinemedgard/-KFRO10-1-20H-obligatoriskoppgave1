@@ -319,3 +319,18 @@ font-weight: bold;
 
 
   
+/* Responsive mobile */
+@media screen and (max-width: 641px){
+
+}
+
+/* Responsive tablet */
+@media screen and (min-width: 641px) and (max-width: 1024px){
+
+}
+
+
+/* Responsive deskop */
+@media screen and (min-width: 1024px){
+
+}
