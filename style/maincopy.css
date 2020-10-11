@@ -12,7 +12,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Generelt */
+/* Generelt tekst*/
 .logo{
     height: 55px;
     margin: 10px 0 0 25px;
@@ -31,10 +31,30 @@
     font-size: 50px;
 }
 
+.container>.innhold-container{
+    padding: 20px 50px 20px 50px;
+}
+
+.innhold-container{
+    width: 100%;
+    position: relative;
+    color: #025951;
+    font-size: 22px;
+}
+
+/* Generelt bilder */
 .fullbredde-bilde{
-    height: 500px;
+    height: 300px;
     overflow: hidden;
     width: 100%;
+    object-fit: cover;
+}
+
+.innhold-container-bilder{
+    height: 200px;
+    width: 100%; 
+    overflow: hidden;  
+    position: relative;
     object-fit: cover;
 }
 
@@ -44,6 +64,22 @@
     width: 100%;
     background-color: lightgray;
 }
+
+#banner-logo{
+    display: none;
+}
+
+@media screen and (min-width: 425px){
+    #banner-logo{
+        display: inherit ;
+    }
+
+    #banner-logo-small{
+        display: none;
+    }
+}
+
+
 
 #brand-container{
     display: block;
@@ -99,6 +135,10 @@
 /* Forside seksjon */
 #forside-overskrift{
     color: white;
-    top: 50%;
-    font-size: 50px;
+    top: 60%;
+    font-size: 25px;
+}
+
+#nyheter>.innhold-container-bilder{
+    height:350px;
 }
