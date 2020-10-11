@@ -1,0 +1,82 @@
+/* mobile first  */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+/* Generelt */
+.logo{
+    height: 55px;
+    margin: 10px 0 0 25px;
+}
+/* container */
+.container{
+    position: relative;
+    width: 100%;
+}
+
+/* Banner */
+#banner{
+    position:relative;
+    width: 100%;
+    background-color: lightgray;
+}
+
+#brand-container{
+display: block;
+height: 75px;
+}
+
+/* Toggle-knapp */
+#toggle-meny-btn{
+    background-color: #025951;
+    color:white ;
+    padding: 15px 25px 15px 25px;
+    float: right;
+    right: 15px;
+    font-size: 20px;
+    
+}
+
+/* Navigasjonsmeny */
+#topp-meny{
+    position: relative;
+}
+
+.meny{
+    position: relative;
+    list-style: none;
+    background-color: #025951;
+}
+
+.meny-item{
+    display: block;
+    text-align: center;
+}
+
+.meny-item-link{
+    color:white;
+    text-decoration: none;
+    font-size: 22px;
+    display: block;
+    padding: 10px 0 10px 0;
+}
+
+.meny-item-link:hover{
+    color: white;
+    background-color: #03A696;
+}
+
+.active{
+    color:white;
+    font-weight: bold;
+    background-color: #03A696;
+}
+
+
