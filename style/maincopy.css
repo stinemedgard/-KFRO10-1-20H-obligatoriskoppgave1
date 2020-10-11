@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 /* mobile first  */
 * {
     margin: 0;
@@ -8,6 +9,7 @@
     vertical-align: baseline;
     background: transparent;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Generelt */
@@ -15,10 +17,25 @@
     height: 55px;
     margin: 10px 0 0 25px;
 }
-/* container */
 .container{
     position: relative;
     width: 100%;
+}
+
+.overskrift-1{
+    position: absolute;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    left: 50%;
+    font-size: 50px;
+}
+
+.fullbredde-bilde{
+    height: 500px;
+    overflow: hidden;
+    width: 100%;
+    object-fit: cover;
 }
 
 /* Banner */
@@ -29,8 +46,8 @@
 }
 
 #brand-container{
-display: block;
-height: 75px;
+    display: block;
+    height: 75px;
 }
 
 /* Toggle-knapp */
@@ -79,4 +96,9 @@ height: 75px;
     background-color: #03A696;
 }
 
-
+/* Forside seksjon */
+#forside-overskrift{
+    color: white;
+    top: 50%;
+    font-size: 50px;
+}
