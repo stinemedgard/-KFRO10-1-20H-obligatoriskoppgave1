@@ -12,11 +12,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Generelt tekst*/
-.logo{
-    height: 55px;
-    margin: 10px 0 0 25px;
-}
+/* Generel overskrift*/
 .container{
     position: relative;
     width: 100%;
@@ -29,16 +25,25 @@
     -ms-transform: translateX(-50%);
     left: 50%;
 }
-
-.overskrift-1{
-    position: absolute;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    left: 50%;
-    font-size: 50px;
+.overskrift-container{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    margin-bottom: 25px;
+    margin-top: 50px;
 }
 
+.overskrift-1{
+    font-size: 50px;
+    color: white;
+}
+
+.overskrift-2{
+    font-size: 50px;
+    color: #025951;
+}
+
+/* Generelt tekst*/
 .container>.innhold-container{
     padding: 20px 50px 20px 50px;
 }
@@ -51,6 +56,11 @@
 }
 
 /* Generelt bilder */
+.logo{
+    height: 55px;
+    margin: 10px 0 0 25px;
+}
+
 .fullbredde-bilde{
     height: 300px;
     overflow: hidden;
@@ -64,6 +74,27 @@
     overflow: hidden;  
     position: relative;
     object-fit: cover;
+}
+
+/* Generelt link */
+.link{
+    color: #025951;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: #03A696;
+    text-decoration: underline;
+}
+
+.link-uthevet{
+    color: #03A696;
+    text-decoration: none;
+}
+
+.link-uthevet:hover{
+color: lightslategray;
+text-decoration: underline;
 }
 
 /* Banner */
@@ -87,8 +118,6 @@
     }
 }
 
-
-
 #brand-container{
     display: block;
     height: 75px;
@@ -102,7 +131,6 @@
     float: right;
     right: 15px;
     font-size: 20px;
-    
 }
 
 /* Navigasjonsmeny */
@@ -142,7 +170,6 @@
 
 /* Forside seksjon */
 #forside-overskrift{
-    color: white;
     top: 10%;
     font-size: 25px;
 }
@@ -151,15 +178,36 @@
     height:350px;
 }
 
-/* Footer */
 
+ /* Kontakt oss - tabeller */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    font-size: 22px;
+    overflow: auto;
+    display: block;
+    white-space: nowrap;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+
+tr:nth-child(even){
+    background-color:#025951;
+    color: white;
+}
+
+/* Footer */
 footer{
     width: 100%;
     bottom: 0; 
     background-color: lightgray;
     position: relative;
     color:#025951;
-
 }
 
 .footer-container{
@@ -181,4 +229,26 @@ footer{
 .footer-published{
     text-align: center;
     padding-top: 10px;
+}
+
+/* Les mer/indre funksjon */
+#nyheter-lesmer{
+    display: none;
+}
+
+#utstilling-lesmer{
+    display: none;
+}
+
+#corona-lesmer{
+    display: none;
+}
+
+/* Responsive tablet */
+@media screen and (min-width: 641px) and (max-width: 1024px){
+}
+
+
+/* Responsive deskop */
+@media screen and (min-width: 1024px){
 }

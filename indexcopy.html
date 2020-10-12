@@ -2,7 +2,7 @@
 <html lang="no">
     <head>
        <meta charset="utf-8">
-       <meta name="viewport" content="width-device-width"> 
+       <meta name="viewport" content="width=device-width"> 
         <title>
             Kistefos museet
         </title>
@@ -14,29 +14,32 @@
             <div id="brand-container"> 
                 <!-- Kilder: Boligbyggelaget Usbl.(2020). Logo Kistefos transparang. 
                     Hentet fra https://usbl.fordelerformedlemmer.no/Fordeler/Kistefos -->
-                <a href="#banner"> <img id="banner-logo" class="logo" src="img/kistefos-logo-app_transp.png" alt="Logo Kistefos"></a>
+                <a href="indexcopy.html"> <img id="banner-logo" class="logo" src="img/kistefos-logo-app_transp.png" alt="Logo Kistefos"></a>
+                <a href="indexcopy.html"> <img id="banner-logo-small" class="logo" src="img/kistefos-logo-app_transp_compact.png" alt="Logo Kistefos"></a>
                 <button id="toggle-meny-btn">Meny</button>
             </div>
            
             <nav id="topp-meny">
                 <ul id="toggle-meny" class="meny">
-                   <li class="meny-item"><a class="meny-item-link active" href="index.html">Hjem</a></li>
-                   <li class="meny-item"><a class="meny-item-link" href="html/produkter.html">Produkter</a></li>
-                   <li class="meny-item"><a class="meny-item-link" href="html/om-oss.html">Om oss</a></li>
-                   <li class="meny-item"><a class="meny-item-link" href="html/kontakt-oss.html">Kontakt oss</a></li>
+                   <li class="meny-item"><a class="meny-item-link active" href="indexcopy.html">Hjem</a></li>
+                   <li class="meny-item"><a class="meny-item-link" href="html/produktercopy.html">Produkter</a></li>
+                   <li class="meny-item"><a class="meny-item-link" href="html/om-osscopy.html">Om oss</a></li>
+                   <li class="meny-item"><a class="meny-item-link" href="html/kontakt-osscopy.html">Kontakt oss</a></li>
                 </ul>
             </nav>
         </header>
         <section id="forside" class="container">   
-            <h1 id="forside-overskrift" class="overskrift-1"> 
+            <h1 id="forside-overskrift" class="overskrift-1 horisontalt-sentrert"> 
                 Velkommen til Kistefos museet
             </h1>
+            <!-- Fullbredde bilde -->
             <!-- Kilde bilde: Visit Innlandet. (2020). Kistefos-Jan Khür-tempo[Bilde]. 
                Hentet fra https://www.visit-innlandet.no/opplevelser/kistefos-kunstdestinasjon-med-en-twist-p642053-->
            <img class="fullbredde-bilde" src="img/forsidebilde.jpg" alt="The twist på Kistefos">
            <!-- Nyheter -->
            <div id="nyheter" class="innhold-container">
                 <div class="innhold-container">
+                    <!-- Kilde bilde:  -->
                     <img class="innhold-container-bilder" src="img/nyhet.jpg" alt="Skulptur på Kistefos">
                 </div>
                 <div class="innhold-container">
@@ -45,8 +48,10 @@
                     </h2>
                     <p>
                         Den internasjonale amerikanske kunstneren Lawrence Weiner har laget den nyeste 
-                        steds-spesikikke skulpturen i Kistefos som ble avduket i 2020. 
-                    </p>
+                        steds-spesikikke <span id="nyheter-dott">...</span><span id="nyheter-lesmer"> skulpturen i Kistefos som ble avduket i 2020. 
+                        </span>
+                </p>
+                <button onclick="toggleNyheter()" id="nyheter-btn">Les mer</button>
                 </div>
             </div>
             <!-- Utstilling -->
@@ -62,9 +67,10 @@
                     </h2>
                     <p>
                         Årets utstilling «Come Out!», består av et utvalg kunstverk fra Christen Sveaas’ 
-                        private kunstsamling. Samlingen består av både norsk og internasjonal kunst, og kan 
-                        oppleves i The Twist fra 24.mai til 11.oktober. 
+                        private kunstsamling. <span id="utstilling-dott">...</span><span id="utstilling-lesmer">Samlingen består av både norsk og internasjonal kunst, og kan 
+                        oppleves i The Twist fra 24.mai til 11.oktober.</span> 
                     </p>
+                    <button onclick="toggleUtstilling()" id="utstilling-btn">Les mer</button>
                 </div>
             </div>
             <!-- Corona -->
@@ -80,9 +86,11 @@
                     </h2>
                     <p>
                         Kistefos holder som normalt åpent denne sesongen, men har ekstra fokus på smitteverntiltak.
-                        Det vil bli begrenset antall plasser inne i museene, butikkene og galleriene for å overholde en 
-                        meters avstand. Betaling skjer kun med kort. 
+                        Det vil bli <span id="corona-dott">...</span><span id="corona-lesmer"> 
+                        begrenset antall plasser inne i museene, butikkene og galleriene for å overholde en 
+                        meters avstand. Betaling skjer kun med kort.</span> 
                     </p>
+                    <button onclick="toggleCorona()" id="corona-btn">Les mer</button>
                 </div>
                </div>
         </section>
@@ -91,7 +99,7 @@
                 <div class="footer-logo horisontalt-sentrert">
                     <!-- Kilder: Boligbyggelaget Usbl.(2020). Logo Kistefos transparang. 
                        Hentet fra https://usbl.fordelerformedlemmer.no/Fordeler/Kistefos -->
-                      <a href="#banner"> <img id="logo-footer" class="logo" src="img/kistefos-logo-app_transp.png" alt="Logo Kistefos"></a>
+                    <a href="#banner"> <img id="logo-footer" class="logo" src="img/kistefos-logo-app_transp.png" alt="Logo Kistefos"></a>
                </div>
             </div>
             <div class="footer-container">
@@ -110,8 +118,9 @@
             
 
 
-
+<!-- Javascript -->
         <script src="script/toggle-meny.js"></script>
+        <script src="script/les-mer-mindre.js"></script>
     </body>
 </html>
 
