@@ -128,9 +128,20 @@ text-decoration: underline;
     background-color: #025951;
     color:white ;
     padding: 15px 25px 15px 25px;
-    float: right;
-    right: 15px;
     font-size: 20px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.toggle-knapp{
+    background-color: #025951;
+    color:white ;  
+    padding: 5px 10px 5px 10px; 
+    font-size: 15px;
 }
 
 /* Navigasjonsmeny */
@@ -201,6 +212,13 @@ tr:nth-child(even){
     color: white;
 }
 
+/* Kart - kontakt oss */
+#mapid { 
+    height: 400px; 
+    position: relative;
+    outline: none;
+}
+
 /* Footer */
 footer{
     width: 100%;
@@ -253,6 +271,22 @@ footer{
 }
 
 #kunst-lesmer{
+    display: none;
+}
+
+#om-kistefos-lesmer{
+    display: none;
+} 
+
+#kistefos-historie-lesmer{
+    display: none;
+}
+
+#transport-lesmer{
+    display: none;
+}
+
+#overnatting-lesmer{
     display: none;
 }
 

@@ -3,10 +3,20 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width"> 
-         <title>
+        <title>
              Kistefos museet
-         </title>
-         <link rel="stylesheet" href="../style/maincopy.css">
+        </title>
+        <link rel="stylesheet" href="../style/maincopy.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+        <script 
+            src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin="">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-routing-machine/3.0.3/leaflet-routing-machine.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-routing-machine/3.0.3/leaflet-routing-machine.css" />
     </head>
     <body>
         <!-- header -->
@@ -89,7 +99,7 @@
                             <th>Kategori</th>
                             <th>Dagskort</th>
                             <th>Årskort</th>
-                            <th>Områdebillett (sesong) utenom åpningstid</th>
+                            <th>Områdebillett</th>
                         </tr>
                         <tr>
                             <td>Voksen</td>
@@ -126,8 +136,8 @@
             </div> 
         
             <!-- Kontaktinformasjon -->
-             <div id="kontaktinformasjon" class="innhold-container">
-                 <div class="innhold-container">
+            <div id="kontaktinformasjon" class="innhold-container">
+                <div class="innhold-container">
                     <h2>
                         Kontaktinformasjon
                     </h2> 
@@ -141,6 +151,15 @@
                     </ul>
                 </div>
             </div> 
+            <div id="kart" class="innhold-contain">
+                <div id="mapid">
+
+                </div>
+            </div>
+             
+            
+
+
             <!-- bilde som tar hele bredden av websiden -->
                 <div class="fullbredde-container">
                 <!-- Kilde bilde: Visit Innlandet. (2020). The path to silence - Kistefos [Bilde]. 
@@ -173,5 +192,6 @@
             <!-- Javascript -->
             <script src="../script/toggle-meny.js"></script>
             <script src="../script/les-mer-mindre.js"></script>
+            <script src="../script/kart.js"></script>
     </body>
 </html>
