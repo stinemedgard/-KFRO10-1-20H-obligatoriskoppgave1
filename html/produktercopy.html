@@ -47,10 +47,11 @@
                     </h2>
                     <p>
                         Industrimuseet ved Kistefos innehar en historisk samling av bygninger, maskiner, 
-                        industrielt inventar og gjenstander som formidler historier fra arbeidslivet og det sosiale livet 
+                        industrielt inventar og gjenstander som formidler historier <span id="industri-dott">...</span><span id="industri-lesmer"> fra arbeidslivet og det sosiale livet 
                         for arbeiderne ved A/S Kistefos Træsliberi. Utstillinger er satt opp i tresliperiet, fyrhuset, 
-                        formannsboligen vognskjulet, brannhuset og snekkerverkstedet. 
+                        formannsboligen vognskjulet, brannhuset og snekkerverkstedet.</span> 
                     </p>
+                    <button onclick="toggleMerMindre('industri-dott','industri-lesmer','industri-btn' )" id="industri-btn">Les mer</button>
                 </div>  
             </div>
             <!-- Skulptur -->
@@ -65,11 +66,12 @@
                         Skulpturer
                     </h2>
                     <p>
-                        Den permanente skulptursamlingen på Kistefos består i dag av 47 skulpturer av flere ulike 
+                        Den permanente skulptursamlingen på Kistefos består i dag av 47 skulpturer av flere ulike <span id="skulptur-dott">...</span><span id="skulptur-lesmer"> 
                         samtidskunstnere med fokus på både nasjonale verk av norske (1999), samt internasjonale 
                         samtidskunstnere. De senere årene (fra 2005) har fokuset vært på steds-spesifikke skulpturer 
-                        som representerer temaene vann, energi, industri, og natur. 
+                        som representerer temaene vann, energi, industri, og natur. </span>  
                     </p>
+                    <button onclick="toggleMerMindre('skulptur-dott', 'skulptur-lesmer', 'skulptur-btn')" id="skulptur-btn">Les mer</button>
                 </div>
             </div>
             <!-- Kunst -->
@@ -85,10 +87,11 @@
                     </h2>
                     <p>
                         Kistefos presenterer kunst fra flere ulike kunstnere i ulike og unike lokaler. The Twist er galleriet som ligger vakkert 
-                        til langs elven med hele tre utstillingslokaler; Closed Gallery, Twist Gallery og Panorama Gallery. 
+                        til <span id="kunst-dott">...</span><span id="kunst-lesmer">langs elven med hele tre utstillingslokaler; Closed Gallery, Twist Gallery og Panorama Gallery. 
                         Videre finner vi Nybruket kunsthall som tidligere tilhørte tresliperiet på Kistefos, men i dag 
-                        inneholder bygget skiftende utstillinger fra både norske og internasjonale kunstnere. 
+                        inneholder bygget skiftende utstillinger fra både norske og internasjonale kunstnere.</span>
                     </p>
+                    <button onclick="toggleMerMindre('kunst-dott', 'kunst-lesmer', 'kunst-btn')" id="kunst-btn">Les mer</button>
                 </div>
             </div>
         </section>
@@ -116,6 +119,6 @@
             </footer>
             <!-- Javascript -->
             <script src="../script/toggle-meny.js"></script>
-            <script src="script/les-mer-mindre.js"></script>
+            <script src="../script/les-mer-mindre.js"></script>
     </body>
 </html>

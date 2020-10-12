@@ -242,6 +242,18 @@ footer{
 
 #corona-lesmer{
     display: none;
+} 
+
+#industri-lesmer{
+    display: none;
+} 
+
+#skulptur-lesmer{
+    display: none;
+}
+
+#kunst-lesmer{
+    display: none;
 }
 
 /* Responsive tablet */
