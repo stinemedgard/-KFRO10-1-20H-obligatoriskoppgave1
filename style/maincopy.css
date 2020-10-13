@@ -11,7 +11,6 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-
 /* Generel overskrift*/
 .container{
     position: relative;
@@ -102,6 +101,7 @@ text-decoration: underline;
     position:relative;
     width: 100%;
     background-color: lightgray;
+    overflow: hidden;
 }
 
 #banner-logo{
@@ -118,9 +118,19 @@ text-decoration: underline;
     }
 }
 
-#brand-container{
-    display: block;
+.brand-container{
+    position: relative;
+    width: 100%;
     height: 75px;
+}
+
+.topp-container{
+    height: 100%;
+    display: block ;
+    width: 50%;
+    overflow: auto;
+    white-space: nowrap;
+    box-sizing: border-box;   
 }
 
 /* Toggle-knapp */
@@ -129,13 +139,8 @@ text-decoration: underline;
     color:white ;
     padding: 15px 25px 15px 25px;
     font-size: 20px;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 95%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
+    float: right;
+} 
 
 .toggle-knapp{
     background-color: #025951;
@@ -179,16 +184,43 @@ text-decoration: underline;
     background-color: #03A696;
 }
 
-/* Forside seksjon */
+/* Forside seksjon og bilde karusell*/
+
+#forside-bilde{
+    display: inline;
+}
+
+.bildekarusell-container{ 
+    position: relative;
+    margin: auto;
+    display: none; 
+}
+
+.bildekarusell{
+    width: 100%;
+}
+
+  .tekst-bildekarusell{
+    color: #f2f2f2;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    top: 10%;
+   
+  }
+
 #forside-overskrift{
     top: 10%;
     font-size: 25px;
+    z-index: 100;
 }
 
 #nyheter>.innhold-container-bilder{
     height:350px;
 }
-
 
  /* Kontakt oss - tabeller */
 table {
@@ -212,11 +244,18 @@ tr:nth-child(even){
     color: white;
 }
 
+#kontaktinformasjon-liste{
+    list-style-type: none;
+}
+
 /* Kart - kontakt oss */
 #mapid { 
-    height: 400px; 
+    height: 400px;
+    border: none;
     position: relative;
     outline: none;
+    overflow: hidden;
+    
 }
 
 /* Footer */
