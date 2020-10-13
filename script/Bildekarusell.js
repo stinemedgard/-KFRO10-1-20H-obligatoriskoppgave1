@@ -10,6 +10,9 @@ if(window.screen.width > 1024){
   showSlides();
 }
 
+function getScreenWidth(){
+  return window.screen.width;  
+}
 
 function showSlides() {
     var i;

@@ -140,6 +140,7 @@ text-decoration: underline;
     padding: 15px 25px 15px 25px;
     font-size: 20px;
     float: right;
+    margin: 10px;
 } 
 
 .toggle-knapp{
@@ -152,6 +153,10 @@ text-decoration: underline;
 /* Navigasjonsmeny */
 #topp-meny{
     position: relative;
+}
+
+#toggle-meny{
+    display: none;
 }
 
 .meny{
@@ -209,7 +214,6 @@ text-decoration: underline;
     width: 100%;
     text-align: center;
     top: 10%;
-   
   }
 
 #forside-overskrift{
@@ -289,51 +293,176 @@ footer{
 }
 
 /* Les mer/indre funksjon */
-#nyheter-lesmer{
-    display: none;
-}
-
-#utstilling-lesmer{
-    display: none;
-}
-
-#corona-lesmer{
-    display: none;
-} 
-
-#industri-lesmer{
-    display: none;
-} 
-
-#skulptur-lesmer{
-    display: none;
-}
-
-#kunst-lesmer{
-    display: none;
-}
-
-#om-kistefos-lesmer{
-    display: none;
-} 
-
-#kistefos-historie-lesmer{
-    display: none;
-}
-
-#transport-lesmer{
-    display: none;
-}
-
-#overnatting-lesmer{
+#nyheter-lesmer, #utstilling-lesmer, #corona-lesmer,
+#industri-lesmer,#skulptur-lesmer, #kunst-lesmer,
+#om-kistefos-lesmer, #kistefos-historie-lesmer,
+#transport-lesmer, #overnatting-lesmer
+{
     display: none;
 }
 
 /* Responsive tablet */
-@media screen and (min-width: 641px) and (max-width: 1024px){
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    /* Les mer/indre funksjon */
+    #nyheter-lesmer, #utstilling-lesmer, #corona-lesmer,
+    #industri-lesmer,#skulptur-lesmer, #kunst-lesmer,
+    #om-kistefos-lesmer, #kistefos-historie-lesmer,
+    #transport-lesmer, #overnatting-lesmer
+    {
+        display: inline;
+    }
+
+    #nyheter-btn, #utstilling-btn, #corona-btn,
+    #industri-btn,#skulptur-btn, #kunst-btn,
+    #om-kistefos-btn, #kistefos-historie-btn,
+    #transport-btn, #overnatting-btn
+    {
+        display: none;
+    }
+
+    #nyheter-dott, #utstilling-dott, #corona-dott,
+    #industri-dott,#skulptur-dott, #kunst-dott,
+    #om-kistefos-dott, #kistefos-historie-dott,
+    #transport-dott, #overnatting-dott
+    {
+        display: none;
+    }
+
+    .innhold-container-bilder{
+    height: 300px;
+    width: 100%; 
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    left: 50%;
+    }
 }
 
 
 /* Responsive deskop */
 @media screen and (min-width: 1024px){
+    /* Les mer/indre funksjon */
+    #nyheter-lesmer, #utstilling-lesmer, #corona-lesmer,
+    #industri-lesmer,#skulptur-lesmer, #kunst-lesmer,
+    #om-kistefos-lesmer, #kistefos-historie-lesmer,
+    #transport-lesmer, #overnatting-lesmer
+    {
+        display: inline;
+    }
+
+    #nyheter-btn, #utstilling-btn, #corona-btn,
+    #industri-btn,#skulptur-btn, #kunst-btn,
+    #om-kistefos-btn, #kistefos-historie-btn,
+    #transport-btn, #overnatting-btn
+    {
+        display: none;
+    }
+
+    #nyheter-dott, #utstilling-dott, #corona-dott,
+    #industri-dott,#skulptur-dott, #kunst-dott,
+    #om-kistefos-dott, #kistefos-historie-dott,
+    #transport-dott, #overnatting-dott
+    {
+        display: none;
+    }
+
+    .inline-container-desktop{
+        display: inline-block;
+        width: 49.5%;
+    }
+
+        /* Footer */
+    footer{
+        width: 100%;
+        bottom: 0; 
+        background-color: lightgray;
+        position: relative;
+        color:#025951;
+    }
+
+    .footer-container{
+        display: inline-block;
+        width: 33%;
+        height: 75px;
+        position: relative;
+    }
+
+    .footer-logo{
+        text-align: center;
+    }
+
+    .footer-copyright{
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .footer-published{
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .innhold-container-bilder{
+        height: 300px;
+        width: 100%; 
+        overflow: hidden;  
+        position: relative;
+        object-fit: cover;
+        float: right;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    
+
+    /* Navigasjonsmeny */
+#topp-meny{
+    position: relative;
+    display: inline-block;
+    width: 59.5%;
+}
+
+#toggle-meny-btn{
+    display: none;
+}
+
+
+#toggle-meny{
+    display: inline;
+    float: right;
+}
+
+.meny{
+    position: relative;
+    list-style: none;
+    background-color: lightgray;
+}
+
+.meny-item{
+    display: inline-block;
+    text-align: center;
+}
+
+#brand-container{
+    display: inline-block;
+    width: 40%;
+}
+
+.meny-item-link{
+    color: #025951;
+    text-decoration: none;
+    font-size: 22px;
+    display: block;
+    padding: 10px 15px 10px 15px;
+}
+
+.meny-item-link:hover{
+    color: #03A696;
+    background-color: lightgray;
+}
+
+.active{
+    color:#03A696;
+    font-weight: bold;
+    background-color: lightgray;
+}
 }
