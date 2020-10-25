@@ -5,23 +5,7 @@ var bildekarusellContainer = document.getElementById('bildekarusell-container');
 
 //setter slideIndex = 0 for at den skal begynne på den første bildet
 var slideIndex = 0;
-//starter bildekarusellen kun for skjermer større enn 1024px(desktop)
-if(nettleserVinduBredde > 1023){
-  //skjuler forsidebildet og viser bildekarusellen
-  forsidebilde.style.display = 'none';
-  bildekarusellContainer.style.display = 'inline';
-  // kaller/utfører funsjonen showSlides() som starter bildekarusellen
   showSlides();
-}else{
-
-  // finner alle bildene som er i slideren/karusellen
-  var karusellBilder = document.getElementsByClassName('bildekarusell');
-  //går igjenom alle bilder og setter display = none for å skjule dem
-  for(i = 0; i < karusellBilder.length; i++){
-    karusellBilder[i].style.display = 'none'
-  }
-}
-
 //funksjon for at bildekarusellen skal veksle mellom bildene som er lagt inn i bildekarusellen
 function showSlides() {
     var i;

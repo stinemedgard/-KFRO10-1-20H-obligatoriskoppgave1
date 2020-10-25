@@ -42,4 +42,12 @@
         font-size: 25px;
         z-index: 100;
     }
+    
+    #bildekarusell-container{
+        display: inline;
+    }
+
+    #forside-bilde{
+        display: none;
+    }
 }
