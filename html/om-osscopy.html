@@ -7,23 +7,27 @@
              Kistefos museet
          </title>
          <link rel="stylesheet" href="../style/maincopy.css">
+         <link rel="stylesheet" href="../style/omoss.css">
     </head>
     <body>
         <!-- header -->
         <header id="banner">
-            <div id="brand-container"> 
-                <!-- Kilder: Boligbyggelaget Usbl.(2020). Logo Kistefos transparang. 
-                    Hentet fra https://usbl.fordelerformedlemmer.no/Fordeler/Kistefos -->
-                <a href="indexcopy.html"> <img id="banner-logo" class="logo" src="../img/kistefos-logo-app_transp.png" alt="Logo Kistefos"></a>
-                <a href="indexcopy.html"> <img id="banner-logo-small" class="logo" src="../img/kistefos-logo-app_transp_compact.png" alt="Logo Kistefos"></a>
-                <button id="toggle-meny-btn">Meny</button>
-            </div>   
-            <nav id="topp-meny">
-                <ul id="toggle-meny" class="meny">
-                   <li class="meny-item"><a class="meny-item-link active" href="../indexcopy.html">Hjem</a></li>
-                   <li class="meny-item"><a class="meny-item-link" href="produktercopy.html">Produkter</a></li>
-                   <li class="meny-item"><a class="meny-item-link" href="om-osscopy.html">Om oss</a></li>
-                   <li class="meny-item"><a class="meny-item-link" href="kontakt-osscopy.html">Kontakt oss</a></li>
+            <nav>
+                <div class="meny-toggle" id="Burger-meny-toggle">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+                <div class="logo-container">
+                        <!-- Kilder: Boligbyggelaget Usbl.(2020). Logo Kistefos transparang. 
+                        Hentet fra https://usbl.fordelerformedlemmer.no/Fordeler/Kistefos -->
+                        <a href="indexcopy.html"> <img id="banner-logo" class="logo" src="../img/kistefos-logo-app_transp.png" alt="Logo Kistefos"></a>
+                </div>
+                <ul id="navbar-meny" class="meny">
+                    <li class="meny-item"><a href="../indexcopy.html" class="meny-item-link">Hjem</a></li>
+                    <li class="meny-item"><a href="produktercopy.html" class="meny-item-link">Produkter</a></li>
+                    <li class="meny-item"><a href="om-osscopy.html" class="meny-item-link current-page">Om oss</a></li>
+                    <li class="meny-item"><a href="kontakt-osscopy.html" class="meny-item-link">Kontakt oss</a></li>
                 </ul>
             </nav>
         </header>
@@ -119,7 +123,7 @@
             </div>
             </footer>
             <!-- Javascript -->
-        <script src="../script/toggle-meny.js"></script>
         <script src="../script/les-mer-mindre.js"></script>
+        <script src="../script/navbar.js"></script>
     </body>
 </html>
