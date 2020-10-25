@@ -2,80 +2,125 @@
 <html lang="no">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width-device-width">
-        <title>
-            Kistefos museet
-        </title>
-        <link rel="stylesheet" href="../style/main.css">
+        <meta name="viewport" content="width=device-width"> 
+         <title>
+             Kistefos museet
+         </title>
+         <link rel="stylesheet" href="../style/main.css">
     </head>
     <body>
         <!-- header -->
-            <header id="banner">
-                    <div id="brand-container">
-                        <!-- Kilder: Boligbyggelaget Usbl.(2020). Logo Kistefos transparang. 
-                            Hentet fra https://usbl.fordelerformedlemmer.no/Fordeler/Kistefos --> 
-                        <a href="../index.html"><img id="logo" src="../img/kistefos-logo-app_transp.png" alt="Logo Kistefos"></a>
-                    </div>
-                   
-                    <nav id="topp-meny">
-                            <ul>
-                               <li><a class="menu-listlink" href="../index.html">Hjem</a></li>
-                               <li><a class="menu-listlink active" href="produkter.html">Produkter</a></li>
-                               <li><a class="menu-listlink" href="om-oss.html">Om oss</a></li>
-                               <li><a class="menu-listlink" href="kontakt-oss.html">Kontakt oss</a></li>
-                            </ul>
-                        </nav>
-                </header>
-                <div id="produkter-overskrift-container">
-                    <h1 id="produkter-overskrift">Produktene våre</h1>
+        <header id="banner">
+            <nav>
+                <div class="meny-toggle" id="Burger-meny-toggle">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
                 </div>
-       
-        <div id="industri" class="innhold-container">
-            <!-- Kilde bilde: Einar Aslaksen. (2020). Fra installasjonen Movimenti della Memoria av Fabrizio Plessi 
-                [Bilde]. Hentet fra https://www.kistefosmuseum.no/-->
-            <img class="innhold-container-bilder" src="../img/industri.jpg" alt="Bilde fra industrimuseumet på Kistefos">
-            <h2>Industrimuseum</h2>
-            <p>Industrimuseet ved Kistefos innehar en historisk samling av bygninger, maskiner, 
-                    industrielt inventar og gjenstander som formidler historier fra arbeidslivet og det sosiale livet 
-                    for arbeiderne ved A/S Kistefos Træsliberi. Utstillinger er satt opp i tresliperiet, fyrhuset, 
-                    formannsboligen vognskjulet, brannhuset og snekkerverkstedet. </p>
-        </div>
-        <div id="skulptur" class="innhold-container">
-                <!-- Kilde bilde: Visit Innlandet. (2020). Yayoi Kusama - Shine of life [Bilde]. 
-                    Hentet fra https://www.visit-innlandet.no/opplevelser/kistefos-kunstdestinasjon-med-en-twist-p642053-->
-                <img class="innhold-container-bilder" src="../img/skulptur.jpg" alt="Skulptur fra Yayoi Kusuma på Kistefos">    
-            <h2>Skulpturer</h2>
-                <p>Den permanente skulptursamlingen på Kistefos består i dag av 47 skulpturer av flere ulike 
-                samtidskunstnere med fokus på både nasjonale verk av norske (1999), samt internasjonale 
-                samtidskunstnere. De senere årene (fra 2005) har fokuset vært på steds-spesifikke skulpturer 
-                som representerer temaene vann, energi, industri, og natur. </p>
+                <div class="logo-container">
+                    <!-- Kilder: Boligbyggelaget Usbl.(2020). Logo Kistefos transparang. 
+                        Hentet fra https://usbl.fordelerformedlemmer.no/Fordeler/Kistefos -->
+                    <a href="../index.html"> <img id="banner-logo" class="logo" src="../img/kistefos-logo-app_transp.png" alt="Logo Kistefos"></a>
+                </div>
+                <ul id="navbar-meny" class="meny">
+                    <li class="meny-item"><a href="../index.html" class="meny-item-link">Hjem</a></li>
+                    <li class="meny-item"><a href="produkter.html" class="meny-item-link current-page">Produkter</a></li>
+                    <li class="meny-item"><a href="om-oss.html" class="meny-item-link">Om oss</a></li>
+                    <li class="meny-item"><a href="kontakt-oss.html" class="meny-item-link">Kontakt oss</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="produkter" class="container">
+            <div class="overskrift-container">
+                <h1 class="overskrift-2 horisontalt-sentrert">
+                    Produkter
+                </h1>
             </div>
+            <!-- Industri -->
+            <div id="industri" class="innhold-container">
+                <div class="innhold-container inline-container-desktop">
+                    <!-- Kilde bilde: Einar Aslaksen. (2020). Fra installasjonen Movimenti della Memoria av Fabrizio Plessi 
+                        [Bilde]. Hentet fra https://www.kistefosmuseum.no/-->
+                    <img class="innhold-container-bilder" src="../img/industri.jpg" alt="Bilde fra industrimuseumet på Kistefos">
+                </div>
+                <div class="innhold-container inline-container-desktop">
+                    <h2>
+                        Industrimuseum  
+                    </h2>
+                    <p>
+                        Industrimuseet ved Kistefos innehar en historisk samling av bygninger, maskiner, 
+                        industrielt inventar og gjenstander som formidler historier <span id="industri-dott">...</span><span id="industri-lesmer"> fra arbeidslivet og det sosiale livet 
+                        for arbeiderne ved A/S Kistefos Træsliberi. Utstillinger er satt opp i tresliperiet, fyrhuset, 
+                        formannsboligen vognskjulet, brannhuset og snekkerverkstedet.</span> 
+                    </p>
+                    <button onclick="toggleMerMindre('industri-dott','industri-lesmer','industri-btn' )" id="industri-btn" class="toggle-knapp">Les mer</button>
+                </div>  
+            </div>
+            <!-- Skulptur -->
+            <div id="skulptur" class="innhold-container">
+                <div class="innhold-container inline-container-desktop">
+                    <!-- Kilde bilde: Visit Innlandet. (2020). Yayoi Kusama - Shine of life [Bilde]. 
+                        Hentet fra https://www.visit-innlandet.no/opplevelser/kistefos-kunstdestinasjon-med-en-twist-p642053-->
+                    <img class="innhold-container-bilder" src="../img/skulptur.jpg" alt="Skulptur fra Yayoi Kusuma på Kistefos">    
+                </div>
+                <div class="innhold-container inline-container-desktop">
+                    <h2>
+                        Skulpturer
+                    </h2>
+                    <p>
+                        Den permanente skulptursamlingen på Kistefos består i dag av 47 skulpturer av flere ulike <span id="skulptur-dott">...</span><span id="skulptur-lesmer"> 
+                        samtidskunstnere med fokus på både nasjonale verk av norske (1999), samt internasjonale 
+                        samtidskunstnere. De senere årene (fra 2005) har fokuset vært på steds-spesifikke skulpturer 
+                        som representerer temaene vann, energi, industri, og natur. </span>  
+                    </p>
+                    <button onclick="toggleMerMindre('skulptur-dott', 'skulptur-lesmer', 'skulptur-btn')" id="skulptur-btn" class="toggle-knapp">Les mer</button>
+                </div>
+            </div>
+            <!-- Kunst -->
             <div id="kunst" class="innhold-container">
+                <div class="innhold-container inline-container-desktop">
                     <!-- Kilde bilde: Visit Innlandet. (2020). Kistefos_EA:Hodgkin_and_Creed [Bilde]. 
                         Hentet fra https://www.visit-innlandet.no/opplevelser/kistefos-kunstdestinasjon-med-en-twist-p642053-->
                     <img class="innhold-container-bilder" src="../img/kunst.jpg" alt="Kunstgalleri på Kistefos"> 
-                <h2>Kunst</h2>
-                    <p>Kistefos presenterer kunst fra flere ulike kunstnere i ulike og unike lokaler. The Twist er galleriet som ligger vakkert 
-                        til langs elven med hele tre utstillingslokaler; Closed Gallery, Twist Gallery og Panorama Gallery. 
+                </div>
+                <div class="innhold-container inline-container-desktop">
+                    <h2>
+                        Kunst
+                    </h2>
+                    <p>
+                        Kistefos presenterer kunst fra flere ulike kunstnere i ulike og unike lokaler. The Twist er galleriet som ligger vakkert 
+                        til <span id="kunst-dott">...</span><span id="kunst-lesmer">langs elven med hele tre utstillingslokaler; Closed Gallery, Twist Gallery og Panorama Gallery. 
                         Videre finner vi Nybruket kunsthall som tidligere tilhørte tresliperiet på Kistefos, men i dag 
-                        inneholder bygget skiftende utstillinger fra både norske og internasjonale kunstnere. </p>
+                        inneholder bygget skiftende utstillinger fra både norske og internasjonale kunstnere.</span>
+                    </p>
+                    <button onclick="toggleMerMindre('kunst-dott', 'kunst-lesmer', 'kunst-btn')" id="kunst-btn" class="toggle-knapp">Les mer</button>
                 </div>
-    <!-- footer -->
+            </div>
+        </section>
+        <!-- footer -->
         <footer>
-                <div class="footer-logo">
+            <div class="footer-container">
+                <div class="footer-logo horisontalt-sentrert">
                     <!-- Kilder: Boligbyggelaget Usbl.(2020). Logo Kistefos transparang. 
-                        Hentet fra https://usbl.fordelerformedlemmer.no/Fordeler/Kistefos -->
-                    <a href="../index.html"><img id="logo-footer" src="../img/kistefos-logo-app_transp.png" alt="Logo Kistefos"></a>
-                </div>
-                <div class="footer-copyright">
+                       Hentet fra https://usbl.fordelerformedlemmer.no/Fordeler/Kistefos -->
+                    <a href="#banner"> <img id="logo-footer" class="logo" src="../img/kistefos-logo-app_transp.png" alt="Logo Kistefos"></a>
+               </div>
+            </div>
+            <div class="footer-container">
+                <div class="footer-copyright horisontalt-sentrert">
                     <p>Copyright &copy; 2020 Kistefos </p>
                 </div>
-                
-                <div class="footer-published">
+            </div>
+            <div class="footer-container">
+                <div class="footer-published horisontalt-sentrert">
                     <p>Publisert 22.09.2020</p>
                     <p>av Stine K. Medgard,</p>
                     <P> <a class="link" href="mailto:email" target="blank">stine.medgard@gmail.com</a></P>
                 </div>
+            </div>
             </footer>
+            <!-- Javascript -->
+            <script src="../script/les-mer-mindre.js"></script>
+            <script src="../script/navbar.js"></script>
     </body>
 </html>

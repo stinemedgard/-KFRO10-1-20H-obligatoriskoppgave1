@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+/* mobile first  */
 * {
     margin: 0;
     padding: 0;
@@ -6,331 +8,410 @@
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
-
-body{
-    margin: 0;
-    padding: 0;
-    margin-top: 0;
-}
-
-/* Banner */
-#banner{
+/* Generel overskrift*/
+.container {
+    position: relative;
     width: 100%;
-    height: 75px;
-    top: 0; 
-    background-color: lightgray;
 }
 
-#brand-container{
-    width: 50%;
-    float: left;
-    height: 100%;
+.horisontalt-sentrert {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+}
+.overskrift-container {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    margin-bottom: 25px;
+    margin-top: 50px;
 }
 
-#logo{
-    height: 55px;
-    margin: 10px 0 0 25px;
+.overskrift-1 {
+    font-size: 50px;
+    color: white;
 }
 
-#topp-meny{
-    width: 50%;
-    float: right;
-    height: 100%;
+.overskrift-2 {
+    font-size: 50px;
+    color: #025951;
 }
 
-#topp-meny ul{
-    float: right;
-    list-style: none;
+/* Generelt tekst*/
+.container>.innhold-container {
+    padding: 20px 50px 20px 50px;
 }
 
-#topp-meny ul li{
-    float: left;
-    padding: 25px 50px 0 0;
-}
-
-.active{
-    color: #03A696;
-    font-weight: bold;
-    
-}
-
-.menu-listlink{
-    color:#025951;
-    text-decoration: none;
+.innhold-container {
+    width: 100%;
+    position: relative;
+    color: #025951;
     font-size: 22px;
-
-}
-#topp-meny ul li a:hover{
-    color:#03A696; 
 }
 
-/* Footer */
-footer{
-    width: 100%;
-    height: 75px;
-    bottom: 0; 
-    background-color: lightgray;
-    position: relative;
-    color:#025951;
-    float: left;
+.innhold-container>h2 {
+    margin-bottom: 15px;
 }
 
-.footer-logo{
-    width:33.33%;
-    float: left;
-}
-
-#logo-footer{
+/* Generelt bilder */
+.logo {
     height: 55px;
-    margin: 10px 0 0 25px;
+    margin: 20px 0 0 25px;
 }
 
-.footer-copyright{
-    width:33.33%;
-    float: left;
-    text-align: center;
-    padding-top: 25px;
-}
-
-.footer-published{
-    width:33.33%;
-    float: left;
-    text-align: center;
-    padding-top: 10px;
-}
-
-/* Fullbredde containere */
-.fullbredde-container{
-    width: 100%;
-    height: 500px;
-    text-align: center;
-    position: relative;
-}
-.fullbredde-bilde{
-    height: 500px;
+.fullbredde-bilde {
+    height: 300px;
     overflow: hidden;
     width: 100%;
     object-fit: cover;
 }
 
-/* Overskift */
-.overskrift-1{
-    position: absolute;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    left: 50%;
-    font-size: 50px;
-}
-
-#forside-overskrift{
-    color: white;
-    top: 65%;
-    font-size: 50px;
-}
-
-/* innhold-container */
-.innhold-container{
-    width: 100%;
-    height: 300px;
-    position: relative;
-    color: #025951;
-}
-.innhold-container h2{
-    font-size: 35px;
-    position: absolute;
-    left: 450px;
-    margin-right: 50px;
-}
-
-.innhold-container p{
-    font-size: 22px;
-    position: absolute;
-    left: 450px;
-    margin-top: 75px;
-    margin-right: 50px; 
-}    
-.innhold-container-bilder{
+.innhold-container-bilder {
     height: 200px;
-    width: 350px; 
-    overflow: hidden;
-    float: left;
-    margin-left: 50px;   
-}
-
-/* index.html*/
- #nyheter{
-    margin-top: 100px;
- }  
-
- /* produkter.html */
- #produkter-overskrift-container{
-     width: 100%;
-     height: 100px;
-     position: relative;
-     margin-bottom: 150px;
-     margin-top: 50px;
- }
-
- #produkter-overskrift{
-     font-size: 50px;
-     position: absolute;
-     color: #025951;
-     transform: translateX(-50%);
-     -webkit-transform: translateX(-50%);
-     -ms-transform: translateX(-50%);
-     left: 50%;
- }
- /* om-oss.html */
- #om-oss-overskrift{
-    color: white;
-    top: 30%;
-    font-size: 70px;
-}
-
- #om-kistefoss{
-     top: 50px;
- }
- #om-kistefoss >h2{
-     left: 50px;
- }
- #om-kistefoss >p{
-     left: 50px;
- }
-
-#kistefos-historie >p{
-    left: 50px; 
-}
-
-#kistefos-historie >h2{
-    left: 50px;
-}
-
-#transport-og-overnatting{
-    height: 375px;
-}
-
-#transport-og-overnatting >h2{
-    left: 50px;
-}
-
-#transport-og-overnatting >p{
-    left: 50px;
-}
-
-#transport-og-overnatting >p:last-child{
-    margin-top: 200px;
-    left: 50px;
-}
-
-/* kontakt-oss.html */
-#kontakt-oss-banner{
-    height: 500px;
-    overflow: hidden;
-    width: 100%;
-    object-fit: cover; 
-}
-#kontakt-oss-overskrift-container{
-    width: 100%;
-    height: 100px;
+    width: 100%; 
+    overflow: hidden;  
     position: relative;
-    margin-bottom: 150px;
-    margin-top: 50px;
+    object-fit: cover;
 }
 
-#kontakt-oss-overskrift-container >h1{
-    font-size: 50px;
-    position: absolute;
+/* Generelt link */
+.link {
     color: #025951;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    left: 50%;
+    text-decoration: none;
 }
 
-#kontaktinformasjon >ul{
-    margin-top: 100px;
+.link:hover {
+    color: #03A696;
+    text-decoration: underline;
 }
 
-/* Tabell */
-table {
-    border-collapse: collapse;
-    width: 70%;
-    margin-left: 50px;
-    margin-bottom: 25px;
-    font-size: 22px;
-  }
-  
-  th, td {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-  }
-
-/* Åpningstider */
-  #aapningatider-tabell{
-    margin-top: -100px;
-  }
-  #aapningatider-tabell >caption{
-      font-weight: bold;
-  }
-  #aapningstider >h2{
-    left: 50px;
-  }
-  #aapningstider >p{
-    left: 50px;
-  }
-
- /* priser */
- #priser >h2{
-    left: 50px;
-}
-#priser >p{
-    left: 50px;
-}
-#pris-tabell{
-    margin-top: -100px;
-    margin-bottom: 150px;
+.link-uthevet {
+    color: #03A696;
+    text-decoration: none;
 }
 
-/* kontaktinformasjon */
-#kontaktinformasjon{
-    margin-bottom: 50px;
+.link-uthevet:hover {
+    color: lightslategray;
+    text-decoration: underline;
 }
 
-#kontaktinformasjon >h2{
-    left: 50px;
+/* Banner */
+#banner {
+    position:relative;
+    width: 100%;
+    background-color: lightgray;
+    overflow: hidden;
 }
 
-#kontaktinformasjon >ul{
-    font-size: 22px;
+.brand-container {
+    position: relative;
+    width: 100%;
+    height: 75px;
+}
+
+.topp-container {
+    height: 100%;
+    display: block ;
+    width: 50%;
+    overflow: auto;
+    white-space: nowrap;
+    box-sizing: border-box;   
+}
+
+/* meny for mobil og tablet */
+nav {
+    width: 100%;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.meny-toggle {
+    font-size: 30px;
+    display: inline-block;
     position: absolute;
-    left: 50px;
-    list-style: none;
+    top: 20px;
+    left: 20px;
 }
 
-/* Linker */
-.link{
-color: #025951;
-text-decoration: none;
-font-weight: bold;
+.burger-line {
+    width: 35px;
+    height: 5px;
+    background-color: #025951;
+    margin: 6px 0;
 }
 
+.logo-container {
+    margin: 40px 0 60px 0;
+}
 
-  
-/* Responsive mobile */
-@media screen and (max-width: 641px){
+.meny {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+    background-color: #025951;
+    width: 100%;
+}
 
+.meny-item {
+    display: block;
+    list-style-type: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: lightgray;
+    text-align: center;
+    border-bottom-style: solid;
+    border-bottom-color: #025951;
+    border-bottom-width: 1px;
+}
+
+.meny-item:first-child {
+    margin-top: 0;
+}
+
+.meny-item:hover {
+    background-color: #03A696;
+    color: lightgray;
+}
+
+.meny-item-link {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: lightgray;
+}
+
+.active {
+    display: flex;
+}
+
+.current-page {
+    font-weight: bold;
+    background-color: #03A696;
+    color: #025951;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    bottom: 0; 
+    background-color: lightgray;
+    position: relative;
+    color:#025951;
+}
+
+.footer-container {
+    width: 100%;
+    height: 75px;
+    float: left;
+    position: relative;
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.footer-copyright {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.footer-published {
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* Les mer/indre funksjon */
+#nyheter-lesmer, #utstilling-lesmer, #corona-lesmer,
+#industri-lesmer,#skulptur-lesmer, #kunst-lesmer,
+#om-kistefos-lesmer, #kistefos-historie-lesmer,
+#transport-lesmer, #overnatting-lesmer
+{
+    display: none;
+}
+
+.toggle-knapp {
+    background-color: #025951;
+    color:white ;  
+    padding: 5px 10px 5px 10px; 
+    font-size: 15px;
 }
 
 /* Responsive tablet */
-@media screen and (min-width: 641px) and (max-width: 1024px){
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    /* Les mer/indre funksjon */
+    #nyheter-lesmer, #utstilling-lesmer, #corona-lesmer,
+    #industri-lesmer,#skulptur-lesmer, #kunst-lesmer,
+    #om-kistefos-lesmer, #kistefos-historie-lesmer,
+    #transport-lesmer, #overnatting-lesmer
+    {
+        display: inline;
+    }
 
+    #nyheter-btn, #utstilling-btn, #corona-btn,
+    #industri-btn,#skulptur-btn, #kunst-btn,
+    #om-kistefos-btn, #kistefos-historie-btn,
+    #transport-btn, #overnatting-btn
+    {
+        display: none;
+    }
+
+    #nyheter-dott, #utstilling-dott, #corona-dott,
+    #industri-dott,#skulptur-dott, #kunst-dott,
+    #om-kistefos-dott, #kistefos-historie-dott,
+    #transport-dott, #overnatting-dott
+    {
+        display: none;
+    }
+
+    .innhold-container-bilder{
+    height: 300px;
+    width: 100%; 
+    transform: translateX(-50%);
+    left: 50%;
+    }
 }
 
 
 /* Responsive deskop */
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
+    /* Les mer/indre funksjon */
+    #nyheter-lesmer, #utstilling-lesmer, #corona-lesmer,
+    #industri-lesmer,#skulptur-lesmer, #kunst-lesmer,
+    #om-kistefos-lesmer, #kistefos-historie-lesmer,
+    #transport-lesmer, #overnatting-lesmer
+    {
+        display: inline;
+    }
 
+    #nyheter-btn, #utstilling-btn, #corona-btn,
+    #industri-btn,#skulptur-btn, #kunst-btn,
+    #om-kistefos-btn, #kistefos-historie-btn,
+    #transport-btn, #overnatting-btn
+    {
+        display: none;
+    }
+
+    #nyheter-dott, #utstilling-dott, #corona-dott,
+    #industri-dott,#skulptur-dott, #kunst-dott,
+    #om-kistefos-dott, #kistefos-historie-dott,
+    #transport-dott, #overnatting-dott
+    {
+        display: none;
+    }
+
+    .inline-container-desktop {
+        display: inline-block;
+        width: 49.5%;
+        vertical-align: text-top;
+    }
+    .inline-container-desktop>h2 {
+        margin-bottom: 15px;
+    }
+    
+    /* Footer */
+    footer {
+        width: 100%;
+        bottom: 0; 
+        background-color: lightgray;
+        position: relative;
+        color:#025951;
+    }
+
+    .footer-container {
+        display: inline-block;
+        width: 33%;
+        height: 75px;
+        position: relative;
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+
+    .footer-logo {
+        text-align: center;
+    }
+
+    .footer-copyright {
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .footer-published {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    /* Innhold container bilde */
+    .innhold-container-bilder {
+        height: 300px;
+        width: 100%; 
+        overflow: hidden;  
+        position: relative;
+        object-fit: cover;
+        float: right;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    /* Header (logo + nevigasjonsmeny)*/
+    nav {
+        height: 70px;
+        flex-direction: row;
+      }
+      
+    .logo-container {
+        padding-left: 50px;
+        margin: 50;
+        width: 20%;
+        z-index: 500;
+    }
+      
+    .meny {
+        display: flex;
+        justify-content: flex-end;
+        width: 80%;
+        flex-direction: row;
+        background-color: transparent
+    }
+      
+    .meny-item {
+        display: inline-block;
+        margin: 0 50px 0 0;
+        text-align: left;
+        border-bottom-style: none;
+        padding: 0;
+        color: #025951;
+    }
+
+    .meny-item-link {
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+        color: #025951;
+    }
+
+    .meny-item-link:hover {
+        color: #03A696;
+    }
+
+    .meny-item:hover {
+        background-color: transparent;
+        color:#03A696;
+    }
+      
+    .meny-toggle {
+        display: none;
+    }
+
+    .current-page {
+        background: transparent;
+        color: #03A696;
+    }
 }
+
