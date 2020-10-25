@@ -12,19 +12,17 @@
     font-family: 'Montserrat', sans-serif;
 }
 /* Generel overskrift*/
-.container{
+.container {
     position: relative;
     width: 100%;
 }
 
-.horisontalt-sentrert{
+.horisontalt-sentrert {
     position: absolute;
     transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
     left: 50%;
 }
-.overskrift-container{
+.overskrift-container {
     width: 100%;
     height: 100px;
     position: relative;
@@ -32,46 +30,46 @@
     margin-top: 50px;
 }
 
-.overskrift-1{
+.overskrift-1 {
     font-size: 50px;
     color: white;
 }
 
-.overskrift-2{
+.overskrift-2 {
     font-size: 50px;
     color: #025951;
 }
 
 /* Generelt tekst*/
-.container>.innhold-container{
+.container>.innhold-container {
     padding: 20px 50px 20px 50px;
 }
 
-.innhold-container{
+.innhold-container {
     width: 100%;
     position: relative;
     color: #025951;
     font-size: 22px;
 }
 
-.innhold-container>h2{
+.innhold-container>h2 {
     margin-bottom: 15px;
 }
 
 /* Generelt bilder */
-.logo{
+.logo {
     height: 55px;
     margin: 20px 0 0 25px;
 }
 
-.fullbredde-bilde{
+.fullbredde-bilde {
     height: 300px;
     overflow: hidden;
     width: 100%;
     object-fit: cover;
 }
 
-.innhold-container-bilder{
+.innhold-container-bilder {
     height: 200px;
     width: 100%; 
     overflow: hidden;  
@@ -80,41 +78,41 @@
 }
 
 /* Generelt link */
-.link{
+.link {
     color: #025951;
     text-decoration: none;
 }
 
-.link:hover{
+.link:hover {
     color: #03A696;
     text-decoration: underline;
 }
 
-.link-uthevet{
+.link-uthevet {
     color: #03A696;
     text-decoration: none;
 }
 
-.link-uthevet:hover{
-color: lightslategray;
-text-decoration: underline;
+.link-uthevet:hover {
+    color: lightslategray;
+    text-decoration: underline;
 }
 
 /* Banner */
-#banner{
+#banner {
     position:relative;
     width: 100%;
     background-color: lightgray;
     overflow: hidden;
 }
 
-.brand-container{
+.brand-container {
     position: relative;
     width: 100%;
     height: 75px;
 }
 
-.topp-container{
+.topp-container {
     height: 100%;
     display: block ;
     width: 50%;
@@ -124,7 +122,7 @@ text-decoration: underline;
 }
 
 /* meny for mobil og tablet */
-nav{
+nav {
     width: 100%;
     background-color: lightgray;
     display: flex;
@@ -134,7 +132,7 @@ nav{
     position: relative;
 }
 
-.meny-toggle{
+.meny-toggle {
     font-size: 30px;
     display: inline-block;
     position: absolute;
@@ -142,28 +140,27 @@ nav{
     left: 20px;
 }
 
-.burger-line{
+.burger-line {
     width: 35px;
     height: 5px;
     background-color: #025951;
     margin: 6px 0;
 }
 
-.logo-container{
+.logo-container {
     margin: 40px 0 60px 0;
 }
 
-.meny{
+.meny {
     display: none;
     flex-direction: column;
     justify-content: center;
     padding-left: 0;
     background-color: #025951;
     width: 100%;
-    
 }
 
-.meny-item{
+.meny-item {
     display: block;
     list-style-type: none;
     font-size: 18px;
@@ -175,36 +172,34 @@ nav{
     border-bottom-width: 1px;
 }
 
-.meny-item:first-child{
+.meny-item:first-child {
     margin-top: 0;
 }
 
-.meny-item:hover{
+.meny-item:hover {
     background-color: #03A696;
     color: lightgray;
 }
 
-.meny-item-link{
+.meny-item-link {
     display: block;
     padding: 20px;
     text-decoration: none;
     color: lightgray;
-
 }
 
-.active{
+.active {
     display: flex;
 }
 
-.current-page{
+.current-page {
     font-weight: bold;
     background-color: #03A696;
     color: #025951;
-
 }
 
 /* Footer */
-footer{
+footer {
     width: 100%;
     bottom: 0; 
     background-color: lightgray;
@@ -212,23 +207,23 @@ footer{
     color:#025951;
 }
 
-.footer-container{
+.footer-container {
     width: 100%;
     height: 75px;
     float: left;
     position: relative;
 }
 
-.footer-logo{
+.footer-logo {
     text-align: center;
 }
 
-.footer-copyright{
+.footer-copyright {
     text-align: center;
     padding-top: 25px;
 }
 
-.footer-published{
+.footer-published {
     text-align: center;
     padding-top: 10px;
 }
@@ -242,7 +237,7 @@ footer{
     display: none;
 }
 
-.toggle-knapp{
+.toggle-knapp {
     background-color: #025951;
     color:white ;  
     padding: 5px 10px 5px 10px; 
@@ -250,7 +245,7 @@ footer{
 }
 
 /* Responsive tablet */
-@media screen and (min-width: 641px) and (max-width: 1023px){
+@media screen and (min-width: 641px) and (max-width: 1023px) {
     /* Les mer/indre funksjon */
     #nyheter-lesmer, #utstilling-lesmer, #corona-lesmer,
     #industri-lesmer,#skulptur-lesmer, #kunst-lesmer,
@@ -280,15 +275,13 @@ footer{
     height: 300px;
     width: 100%; 
     transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
     left: 50%;
     }
 }
 
 
 /* Responsive deskop */
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
     /* Les mer/indre funksjon */
     #nyheter-lesmer, #utstilling-lesmer, #corona-lesmer,
     #industri-lesmer,#skulptur-lesmer, #kunst-lesmer,
@@ -314,17 +307,17 @@ footer{
         display: none;
     }
 
-    .inline-container-desktop{
+    .inline-container-desktop {
         display: inline-block;
         width: 49.5%;
         vertical-align: text-top;
     }
-    .inline-container-desktop>h2{
+    .inline-container-desktop>h2 {
         margin-bottom: 15px;
     }
     
-        /* Footer */
-    footer{
+    /* Footer */
+    footer {
         width: 100%;
         bottom: 0; 
         background-color: lightgray;
@@ -332,7 +325,7 @@ footer{
         color:#025951;
     }
 
-    .footer-container{
+    .footer-container {
         display: inline-block;
         width: 33%;
         height: 75px;
@@ -341,21 +334,22 @@ footer{
         margin-bottom: 50px;
     }
 
-    .footer-logo{
+    .footer-logo {
         text-align: center;
     }
 
-    .footer-copyright{
+    .footer-copyright {
         text-align: center;
         padding-top: 50px;
     }
 
-    .footer-published{
+    .footer-published {
         text-align: center;
         padding-top: 20px;
     }
 
-    .innhold-container-bilder{
+    /* Innhold container bilde */
+    .innhold-container-bilder {
         height: 300px;
         width: 100%; 
         overflow: hidden;  
@@ -365,50 +359,48 @@ footer{
         margin-right: 30px;
         margin-left: 30px;
     }
-
+    /* Header (logo + nevigasjonsmeny)*/
     nav {
         height: 70px;
         flex-direction: row;
       }
       
-      .logo-container {
+    .logo-container {
         padding-left: 50px;
         margin: 50;
         width: 20%;
         z-index: 500;
-      }
+    }
       
-      .meny {
+    .meny {
         display: flex;
         justify-content: flex-end;
         width: 80%;
         flex-direction: row;
         background-color: transparent
-      }
+    }
       
-      .meny-item {
+    .meny-item {
         display: inline-block;
         margin: 0 50px 0 0;
         text-align: left;
         border-bottom-style: none;
         padding: 0;
         color: #025951;
-      }
+    }
 
-      .meny-item-link{
+    .meny-item-link {
         display: block;
         padding: 15px;
         text-decoration: none;
         color: #025951;
-    
     }
 
-    .meny-item-link:hover{
+    .meny-item-link:hover {
         color: #03A696;
-    
     }
 
-      .meny-item:hover {
+    .meny-item:hover {
         background-color: transparent;
         color:#03A696;
     }
@@ -417,7 +409,7 @@ footer{
         display: none;
     }
 
-    .current-page{
+    .current-page {
         background: transparent;
         color: #03A696;
     }

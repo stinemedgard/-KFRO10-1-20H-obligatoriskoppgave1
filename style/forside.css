@@ -1,19 +1,19 @@
 /* Forside seksjon og bilde karusell*/
-#forside-bilde{
+#forside-bilde {
     display: inline;
 }
 
-#bildekarusell-container{ 
+#bildekarusell-container { 
     position: relative;
     margin: auto;
     display: none; 
 }
 
-.bildekarusell{
+.bildekarusell {
     width: 100%;
 }
 
-.tekst-bildekarusell{
+.tekst-bildekarusell {
     color: #f2f2f2;
     font-size: 25px;
     padding: 8px 12px;
@@ -24,30 +24,30 @@
     top: 10%;
 }
 
-#forside-overskrift{
+#forside-overskrift {
     top: 150px;
     font-size: 25px;
     z-index: 100;
 }
 
-#nyheter>.innhold-container-bilder{
+#nyheter>.innhold-container-bilder {
     height:350px;
 }
 
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
 
-    #forside-overskrift{
+    #forside-overskrift {
         top: 185px;
         font-size: 25px;
         z-index: 100;
     }
     
-    #bildekarusell-container{
+    #bildekarusell-container {
         display: inline;
     }
 
-    #forside-bilde{
+    #forside-bilde {
         display: none;
     }
 }

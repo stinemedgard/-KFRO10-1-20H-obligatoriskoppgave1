@@ -8,19 +8,19 @@ table {
     overflow: auto;
     display: block;
     white-space: nowrap;
-  }
+}
 
-  th, td {
-    padding: 8px;
-    text-align: left;
-  }
+th, td {
+  padding: 8px;
+  text-align: left;
+}
 
-tr:nth-child(even){
+tr:nth-child(even) {
     background-color:#025951;
     color: white;
 }
 
-#kontaktinformasjon-liste{
+#kontaktinformasjon-liste {
     list-style-type: none;
 }
 
@@ -30,6 +30,5 @@ tr:nth-child(even){
     border: none;
     position: relative;
     outline: none;
-    overflow: hidden;
-    
+    overflow: hidden; 
 }
